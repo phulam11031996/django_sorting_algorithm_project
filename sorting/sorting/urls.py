@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from sortingApp.views import HomeView, BubbleView
+from sortingApp.views import HomeView, BubbleView, SelectionView, InsertionView, MergeView, QuickView, RadixView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view()),
     path('sortingApp/',include('sortingApp.urls',namespace='bubble')),
+    path('sortingApp/',include('sortingApp.urls',namespace='selection')),
+    path('sortingApp/',include('sortingApp.urls',namespace='insertion')),
+    path('sortingApp/',include('sortingApp.urls',namespace='merge')),
+    path('sortingApp/',include('sortingApp.urls',namespace='quick')),
+    path('sortingApp/',include('sortingApp.urls',namespace='radix')),
 ]
