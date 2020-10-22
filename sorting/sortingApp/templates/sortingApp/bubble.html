@@ -1,5 +1,27 @@
 {% extends "sortingApp/home.html" %}
 
 {% block content %}
-    <h2>Welcome to bubble page!</h2>
+    <h2>Time and Space Complexity Analysis</h2>
+    <ul>
+        <li>
+            <h4>Time Complexity: O(n*n)</h4>
+                <ul>
+                    <li><p>O(n*n). Worst case scenario when input array is completely unsorted.</p></li>
+                    <li><p>O(n). Best case scenario when input array is fully sorted. The nested loop will only have to perform one single pass.</p></li>
+                </ul>
+        </li>
+        <li>
+            <h4>Space Complexity: O(1)</h4>
+            <ul>
+                <li><p>Bubble Sort is a constant space, O(1), algorithm. The amount of memory consumed by the algorithm does not increase relative to the size of the input array.</p></li>
+            </ul>
+        </li>
+        <li>
+            <h4>When should we use Bubble Sort?</h4>
+            <ul>
+                <li><p>When sorting really small arrays where run time will be negligible no matter what algorithm we choose.</p></li>
+                <li><p>When sorting arrays that we expect to already be nearly sorted.</p></li>
+            </ul>
+        </li>
+    </ul>
 {% endblock content %}

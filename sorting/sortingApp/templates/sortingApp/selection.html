@@ -1,5 +1,26 @@
 {% extends "sortingApp/home.html" %}
 
 {% block content %}
-    <h2>Welcome to selection page!</h2>
+    <h2>Time and Space Complexity Analysis</h2>
+    <ul>
+        <li>
+            <h4>Time Complexity: O(n*n)</h4>
+                <ul>
+                    <li><p>O(n*n). Worst case scenario where our input array is entirely unsorted, since this algorithm contains a nested loop, its run time behaves similarly to bubbleSort and selectionSor</p></li>
+                    <li><p>O(n). Best case scenario where our left side of the array is always sorted.</p></li>
+                </ul>
+        </li>
+        <li>
+            <h4>Space Complexity: O(1)</h4>
+            <ul>
+                <li><p>The amount of memory consumed by the algorithm does not increase relative to the size of the input array.</p></li>
+            </ul>
+        </li>
+        <li>
+            <h4>When should we use Bubble Sort?</h4>
+            <ul>
+                <li><p>The absolute best case scenario for Insertion Sort is when there is only one unsorted element, and it is located all the way to the right of the array. (Online Algorithm)</p></li>
+            </ul>
+        </li>
+    </ul>
 {% endblock content %}

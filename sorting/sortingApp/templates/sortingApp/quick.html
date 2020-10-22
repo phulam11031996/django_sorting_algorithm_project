@@ -1,5 +1,28 @@
 {% extends "sortingApp/home.html" %}
 
 {% block content %}
-    <h2>Welcome to quick page!</h2>
+        <h2>Time and Space Complexity Analysis</h2>
+    <ul>
+        <li>
+            <h4>Time Complexity: O(n log(n))</h4>
+                <ul>
+                    <li><p>Average Case: O(n log(n)). When we chose a random pivot.</p></li>
+                    <li><p>Worst Case: O(n*n). When we chose the worst pivot.</p></li>
+                    <li><p>Best Case: O(nlog(n)). When we chose the median pivot.</p></li>
+                </ul>
+        </li>
+        <li>
+            <h4>Space Complexity: O(1)</h4>
+            <ul>
+                <li><p>Our implementation of quickSort uses O(n) space because of the partition arrays we create. Note: There is also another version uses O(log(n)) space.</p></li>
+            </ul>
+        </li>
+        <li>
+            <h4>When should we use Bubble Sort?</h4>
+            <ul>
+                <li><p>The recursive code is light and simple to implement than merge sort.</p></li>
+                <li><p>When we know the constrain of data set. Since the algorithm allows us to pick the pivot anywhere in the array.</p></li>
+            </ul>
+        </li>
+    </ul>
 {% endblock content %}

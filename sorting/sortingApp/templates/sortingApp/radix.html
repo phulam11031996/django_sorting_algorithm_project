@@ -1,5 +1,27 @@
 {% extends "sortingApp/home.html" %}
 
 {% block content %}
-    <h2>Welcome to radix page!</h2>
+    <h2>Time and Space Complexity Analysis</h2>
+    <ul>
+        <li>
+            <h4>Time Complexity: O(n*k) k is the length (number of digits)</h4>
+                <ul>
+                    <li><p>In general, the best, average, and worst case time complexities of Radix Sort are all the same.</p></li>
+                    <li><p>Note:  There exists a camp that believes that when Radix Sort's input array contains entirely unique values, due to a characteristic of the way computers store numerical data, that k becomes log k. (See Wikipedia: Radix Sort)</p></li>
+                </ul>
+        </li>
+        <li>
+            <h4>Space Complexity: O(n + k) k is the length (number of digits</h4>
+            <ul>
+                <li><p>The amount of memory consumed by the algorithm increases relative to both the size of the input array and the length of the longest integer.</p></li>
+            </ul>
+        </li>
+        <li>
+            <h4>When should we use Bubble Sort?</h4>
+            <ul>
+                <li><p>Sort a list of any sort of binary data, including numeric, text, or image data in binary format.</p></li>
+                <li><p>Sort a list of integers, and you don't know the value of the largest element in the list.</p></li>
+            </ul>
+        </li>
+    </ul>
 {% endblock content %}

@@ -1,5 +1,26 @@
 {% extends "sortingApp/home.html" %}
 
 {% block content %}
-    <h2>Welcome to merge page!</h2>
+    <h2>Time and Space Complexity Analysis</h2>
+    <ul>
+        <li>
+            <h4>Time Complexity: O(n log(n))</h4>
+                <ul>
+                    <li><p>n is the length of the input array.</p></li>
+                    <li><p>Log n is how many recursive calls we make. Since we split the array in half, the number of recursive calls is O(log(n)).</p></li>
+                </ul>
+        </li>
+        <li>
+            <h4>Space Complexity: O(1)</h4>
+            <ul>
+                <li><p>The larger the size of our input array, the greater the number of subarrays we must create in memory.Therefore, Merge Sort has a linear space complexity, O(n).</p></li>
+            </ul>
+        </li>
+        <li>
+            <h4>When should we use Bubble Sort?</h4>
+            <ul>
+                <li><p>We have unlimited memory available.</p></li>
+            </ul>
+        </li>
+    </ul>
 {% endblock content %}
