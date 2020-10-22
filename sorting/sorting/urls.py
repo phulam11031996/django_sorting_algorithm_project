@@ -20,5 +20,5 @@ from sortingApp.views import HomeView, BubbleView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view()),
-    path('bubble/', BubbleView.as_view()),
+    path('sortingApp/',include('sortingApp.urls',namespace='bubble')),
 ]
